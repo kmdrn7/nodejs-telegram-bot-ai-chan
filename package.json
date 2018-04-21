@@ -1,0 +1,26 @@
+{
+  "name": "telegram-bot-ai-chan",
+  "version": "1.0.0",
+  "description": "Just for fun project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmdrn7/nodejs-telegram-bot-ai-chan.git"
+  },
+  "keywords": [
+    "Telegram",
+    "Bot"
+  ],
+  "author": "Kmdrn7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmdrn7/nodejs-telegram-bot-ai-chan/issues"
+  },
+  "homepage": "https://github.com/kmdrn7/nodejs-telegram-bot-ai-chan#readme",
+  "dependencies": {
+    "telegram-node-bot": "^4.0.5"
+  }
+}
