@@ -6,8 +6,11 @@ const Telegram = require("telegram-node-bot"),
         });
 
 const PingController = require("./controllers/ping_controller"),
-        OtherwiseController = require("./controllers/otherwise_controller");
+        OtherwiseController = require("./controllers/otherwise_controller"),
+        TodoController = require("./controllers/todo_controller");
 
-bot.router.when(new Telegram.TextCommand('/ping', 'pingCommand'), 
-                new PingController())
-                .otherwise(new OtherwiseController());
+const todoCtrl = new TodoController();
+
+bot.router.when(new Telegram.TextCommand('/add', 'addCommand'), todoCtrl)
+        .when(new Telegram.TextCommand('/get', 'getCommand'), todoCtrl)
+        .otherwise(new OtherwiseController());
